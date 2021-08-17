@@ -20,7 +20,19 @@ app.get('/', (req, res) => {
 
 
 function handleQuery(query, cb) {
-    cb('Awesome');
+   switch (query) {
+     case 'hi':
+       cb('Hi beauty!')
+       break;
+     case 'te amo':
+        cb('Yo te amo mas')
+        break;
+      case 'I love you':
+        cb('I love you more!')
+     default:
+        cb('Try something nicer')
+       break;
+   }
 }
 
 /**
