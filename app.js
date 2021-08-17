@@ -33,7 +33,7 @@ function handleQuery(query, cb) {
       case 'sleep':
          cb('Only si te chupo la popola!');
         break;
-     case '':
+     case 'no':
         cb('Try something nice(r)')
        break;
    }
