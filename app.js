@@ -22,19 +22,19 @@ app.get('/', (req, res) => {
 function handleQuery(query, cb) {
    switch (query) {
      case 'hi':
-       cb('Hi beauty!')
+       cb('Hi beauty!');
        break;
      case 'te amo':
-        cb('Yo te amo mas')
+        cb('Yo te amo mas');
         break;
       case 'I love you':
-        cb('I love you more!')
+        cb('I love you more!');
         break;
       case 'sleep':
-         cb('Only si te chupo la popola!')
+         cb('Only si te chupo la popola!');
         break;
-     default:
-        cb('Try something nicer')
+     case '':
+        cb('Try something nice(r)')
        break;
    }
 }
