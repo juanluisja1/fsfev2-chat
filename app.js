@@ -29,6 +29,10 @@ function handleQuery(query, cb) {
         break;
       case 'I love you':
         cb('I love you more!')
+        break;
+      case 'sleep':
+         cb('Only si te chupo la popola!')
+        break;
      default:
         cb('Try something nicer')
        break;
