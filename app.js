@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 
-
+// query = message from the client, cb = chat bot
 function handleQuery(query, cb) {
    switch (query) {
      case 'hi':
