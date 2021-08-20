@@ -13,14 +13,30 @@ app.use('/js', express.static(path.join(__dirname, 'ui/js/')));
 app.use('/css', express.static(path.join(__dirname, 'ui/css/')));
 
 
-app.get('/', (req, res) => {
+app.get('/chat', (req, res) => {
     res.sendFile(path.join(__dirname + '/ui/html/index.html'));
 });
 
 
-
+//customize bot
 function handleQuery(query, cb) {
-    cb('Awesome');
+  switch (query) {
+    case 'hi':
+      cb('Hi beauty!');
+      break;
+    case 'te amo':
+       cb('Yo te amo mas');
+       break;
+     case 'I love you':
+       cb('I love you more!');
+       break;
+     case 'sleep':
+        cb('Only si te chupo la popola!');
+       break;
+    case 'no':
+       cb('Try something nice(r)')
+      break;
+  }
 }
 
 /**
