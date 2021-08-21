@@ -1,5 +1,6 @@
 const webSocketOutput = document.querySelector('.output');
 const inputBtn = document.querySelector('.input-box');
+const onBtn = document.querySelector('.send-btn');
 
 inputBtn.addEventListener('keypress', function(event) {
     if (event.key === "Enter") {
@@ -7,6 +8,14 @@ inputBtn.addEventListener('keypress', function(event) {
         event.target.value = '';
         sendQuery(query);
     }
+});
+
+onBtn.addEventListener('click', function() {
+  
+      const query = inputBtn.value;
+      inputBtn.value = '';
+      sendQuery(query);
+  
 });
 
 let ws;
