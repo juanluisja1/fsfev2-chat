@@ -1,3 +1,7 @@
+header {
+    position: relative;       /* so you desktop show inside header */
+  }
+
 .output{
     width:300px;
     height: auto;
